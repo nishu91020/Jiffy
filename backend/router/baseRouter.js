@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 
-const vendor = require('./vendor/vendorIndex.js');
-const customerRouter = require('./customer/customerIndex.js');
-const product = require('./product/productIndex.js');
+const vendor = require('./vendorRouter.js');
+const customerRouter = require('../customer/customerIndex.js');
+const product = require('./productRouter.js');
 
 app.use('/vendor', vendor);
 app.use('/customer', customerRouter);

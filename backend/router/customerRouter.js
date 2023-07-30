@@ -1,7 +1,7 @@
 const express = require('express');
 const customerRouter = express.Router();
 
-const cartRouter = require('../cart/cartIndex');
+const cartRouter = require('./cartRouter');
 
 customerRouter.get('/', (req, res, next) => {
     res.send('in customer');
