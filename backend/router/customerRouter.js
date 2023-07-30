@@ -7,7 +7,7 @@ customerRouter.get('/', (req, res, next) => {
     res.send('in customer');
 });
 
-customerRouter.use('/cart', cartRouter);
+customerRouter.use('/:customerId/cart', cartRouter);
 
 customerRouter.get('/:customerId/allOrders', (req, res, next) => {});
 

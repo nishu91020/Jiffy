@@ -13,8 +13,8 @@ vendorRouter.get('/:vendorId/details', (req, res, next) => {});
 
 vendorRouter.post('/:vendorId/addProduct', (req, res, next) => {});
 
-vendorRouter.put('/:vendorId/:productId/modifyProduct', (req, res, next) => {});
+vendorRouter.put('/:vendorId/modifyProduct/:productId', (req, res, next) => {});
 
-vendorRouter.delete('/:vendorId/:productId/deleteProduct', (req, res, next) => {});
+vendorRouter.delete('/:vendorId/deleteProduct/:productId', (req, res, next) => {});
 
 module.exports = vendorRouter;
